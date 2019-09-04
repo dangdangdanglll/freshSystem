@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>adQuV3</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js">
+    </script>
+	<style type="text/css">
+		#leftContainer{
+			height: 700px;
+			width: 29%;
+            border: 1px solid black;
+            float: left;
+            text-align: center;
+            transition-timing-function:ease;
+		}
+		#rightContainer{
+			height: 700px;
+			width: 70%;
+			border: 1px solid blue;
+			float: left;
+			overflow: scroll;
+		}
+		.direction{
+			font-size:1.5em;
+			color:white;
+			background-color:#BFEFFF;
+			border-radius: 5px;
+			
+		}
+		.direction:hover{
+			background-color:#436EEE;
+		}
+		.alaber{
+			text-decoration: none;
+		}
+        .slaber:hover{
+            background-color:#436EEE;
+            border-radius: 5px;
+        }
+	</style>
+</head>
+<body>
+	<div id="leftContainer">
+		<br>
+		<br>
+		<br>
+		<a href="javascript:;" class="alaber">
+			<font class="direction">后台</font><br>
+		</a>
+			<span id="front" class="son">
+			    <a href="javascript:;" class="alaber slaber"><font>报名成功</font></a><br>
+                <a href="javascript:;" class="alaber slaber"><font>一面失败</font></a><br>
+			    <a href="javascript:;" class="alaber slaber"><font>一面通过</font></a><br>
+                <a href="javascript:;" class="alaber slaber"><font>二面失败</font></a><br>
+			    <a href="javascript:;" class="alaber slaber"><font>二面通过</font></a><br>
+                <a href="javascript:;" class="alaber slaber"><font>准备加面</font></a><br>
+                <a href="javascript:;" class="alaber slaber"><font>加面成功</font></a><br>
+			    <a href="javascript:;" class="alaber slaber"><font>恭喜加入</font></a>
+		    </span>
+	
+		<br>
+		<br>
+		<br>
+
+
+
+
+		<a href="javascript:;" class="alaber">
+			<font class="direction">前端</font><br>
+		</a>
+			<span id="backstage" class="son">
+			   <a href="javascript:;" class="alaber slaber"><font>报名成功</font></a><br>
+                <a href="javascript:;" class="alaber slaber"><font>一面失败</font></a><br>
+                <a href="javascript:;" class="alaber slaber"><font>一面通过</font></a><br>
+                <a href="javascript:;" class="alaber slaber"><font>二面失败</font></a><br>
+                <a href="javascript:;" class="alaber slaber"><font>二面通过</font></a><br>
+                <a href="javascript:;" class="alaber slaber"><font>准备加面</font></a><br>
+                <a href="javascript:;" class="alaber slaber"><font>加面成功</font></a><br>
+                <a href="javascript:;" class="alaber slaber"><font>恭喜加入</font></a>			
+		    </span>
+	
+		<br>
+		<br>
+		<br>
+
+
+
+
+		<a href="javascript:;" class="alaber">
+			<font class="direction">安卓</font><br>
+		</a>
+			<span id="android" class="son">
+			   <a href="javascript:;" class="alaber slaber"><font>报名成功</font></a><br>
+                <a href="javascript:;" class="alaber slaber"><font>一面失败</font></a><br>
+                <a href="javascript:;" class="alaber slaber"><font>一面通过</font></a><br>
+                <a href="javascript:;" class="alaber slaber"><font>二面失败</font></a><br>
+                <a href="javascript:;" class="alaber slaber"><font>二面通过</font></a><br>
+                <a href="javascript:;" class="alaber slaber"><font>准备加面</font></a><br>
+                <a href="javascript:;" class="alaber slaber"><font>加面成功</font></a><br>
+                <a href="javascript:;" class="alaber slaber"><font>恭喜加入</font></a>			
+		    </span>
+	
+		<br>
+		<br>
+		<br>
+
+
+
+
+
+		<a href="javascript:;" class="alaber">
+			<font class="direction">嵌入式</font><br>
+		</a>
+			<span id="embeded" class="son">
+			    <a href="javascript:;" class="alaber slaber"><font>报名成功</font></a><br>
+                <a href="javascript:;" class="alaber slaber"><font>一面失败</font></a><br>
+                <a href="javascript:;" class="alaber slaber"><font>一面通过</font></a><br>
+                <a href="javascript:;" class="alaber slaber"><font>二面失败</font></a><br>
+                <a href="javascript:;" class="alaber slaber"><font>二面通过</font></a><br>
+                <a href="javascript:;" class="alaber slaber"><font>准备加面</font></a><br>
+                <a href="javascript:;" class="alaber slaber"><font>加面成功</font></a><br>
+                <a href="javascript:;" class="alaber slaber"><font>恭喜加入</font></a>		
+		    </span>
+		
+		<br>	
+		<br>
+		<br>
+
+
+
+
+        <a href="javascript:;" class="alaber">
+            <font class="direction">产品</font><br>
+        </a>
+            <span id="produce" class="son">
+                <a href="javascript:;" class="alaber slaber"><font>报名成功</font></a><br>
+                <a href="javascript:;" class="alaber slaber"><font>一面失败</font></a><br>
+                <a href="javascript:;" class="alaber slaber"><font>一面通过</font></a><br>
+                <a href="javascript:;" class="alaber slaber"><font>二面失败</font></a><br>
+                <a href="javascript:;" class="alaber slaber"><font>二面通过</font></a><br>
+                <a href="javascript:;" class="alaber slaber"><font>准备加面</font></a><br>
+                <a href="javascript:;" class="alaber slaber"><font>加面成功</font></a><br>
+                <a href="javascript:;" class="alaber slaber"><font>恭喜加入</font></a>      
+            </span>
+        
+        <br>    
+        <br>
+        <br>
+	</div>
+	<div id="rightContainer"></div>
+</body>
+<script type="text/javascript">
+	var spans = document.getElementsByTagName('span');
+	var dirs = document.getElementsByClassName("direction");
+	var sons = document.getElementsByClassName("son");
+	var number;
+	function allNone(){  //先将报名成功一面通过等不显示
+		for(var i = 0 ; i < spans.length; i++){
+		    spans[i].style.display = "none";
+	    }
+	}
+    function oneBlock() {      //点击哪个哪个的面试情况显示
+            
+        for( var i=0; i< dirs.length; i++ ) {    
+            (function(arg){        
+                dirs[i].onclick = function() { 
+                    allNone();
+                    number = arg;    
+                    spans[arg].style.display = "block";
+                    clickLi();    
+                };    
+            })(i);//调用时参数    
+        }    
+    }
+    allNone();
+    oneBlock();
+    
+
+    function clickLi(){  //点击某个面试情况时，请求数据
+    	for(var i = 0 ;i < sons[number].childNodes.length;i++){
+            (function(arg){
+                if(sons[number].childNodes[i].tagName == "A"){
+                	sons[number].childNodes[i].onclick = function(){
+
+                		var dirValue,staValue;
+                		dirValue = number;
+                        // console.log(dirValue);
+                		if(arg==1){
+                			staValue = 0;
+                		}
+                		else if(arg == 4){
+                			staValue = 1;
+                		}
+                		else if(arg == 7){
+                			staValue = 2;
+                		}
+                		else if(arg == 10){
+                			staValue = 3;
+                		}
+                        else if(arg == 13){
+                            staValue = 4;
+                        }
+                        else if(arg == 16){
+                            staValue = 5;
+                        }
+                        else if(arg == 19){
+                            staValue = 6;
+                        }
+                        else if(arg == 21){
+                            staValue = 7;
+                        }
+             
+
+
+
+                		var infor= "oper=showALL&"
+                		"&direction=" + dirValue + "&state=" + staValue;
+                        var xhr = GetXmlHttpObject();
+                        xhr.onreadystatechange = function(){
+    		            if(xhr.readyState == 4){
+    			        if((xhr.status >= 200 && xhr.status < 300)||(xhr.status ==304)){
+    			   
+                                var strJson = xhr.responseText;
+                                var information = eval("("+strJson+")");
+                                showInfor(information,dirValue,staValue);
+                        }
+    			        else
+    				        write.innerHTML = "查询失败";
+    		            }
+                        }
+    	                xhr.open("POST","/NewMembers/NmServlet");
+    	                xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+    	                xhr.send(infor);
+                	}
+                }
+            })(i);
+
+
+
+    		
+    	}
+ 
+        
+    }
+    
+    
+    
+    function showInfor(ifm,direction,state){  //获得当前页面，总页面参数
+    	var current,all;
+    	for(var i in ifm){
+    		if(i == "pageNum"){
+    			for(var j in ifm){
+    				if(j == "total"){
+    					current = ifm[i];
+    					all = ifm[j];
+    					// createNextPage(ifm[i],ifm[j]);
+    				}
+    			}
+    		}
+    		if(i == "list"){
+    			showinforV2(ifm[i],current,all,direction,state);
+    		}
+    		
+    	}
+    	
+    }
+
+    function showinforV2(ifm,current,all,direction,state){  //将请求到的json数据展示在右边div
+        var icounter = 0;
+    	var icount = 0;
+    	var table = document.createElement("table");
+    	createTableHead(table);
+    	var tr = document.createElement("tr");
+    	table.appendChild(tr);
+    	for(var i in ifm){
+    	    for(var j in ifm[i]){
+    	    	
+    	    	if(icounter%9 == 0){
+                    var tr = document.createElement("tr");
+                    table.appendChild(tr);
+    	    	}
+
+    	    	if((icount%5 == 0 || icount%6 == 0 || icount%7== 0)&& icount != 0){
+    	    		var input = document.createElement("input");
+    	    		input.tpye = "text";
+    	    		input.style.width = "4em";
+    	    		input.value = ifm[i][j];
+    	    		var td = document.createElement("td");
+    	    		tr.appendChild(td);
+    	    		td.appendChild(input);
+    	    	}
+    	    	else{
+    	    		var td = document.createElement("td");
+    	    	    td.innerHTML = ifm[i][j];
+    	    	    tr.appendChild(td);
+    	    	}
+    	    	
+                icount++;
+    		    icounter++;
+    	    }
+    	    var a = document.createElement("a");
+    	    a.innerHTML = "保存";
+    	    a.href = "javascript:;";
+    	    a.className = "modify";
+    	    tr.appendChild(a);
+    	    icount = 0;
+        }
+        var div = document.getElementById("rightContainer");
+        while(div.firstChild){
+        	div.removeChild(div.firstChild);
+        }
+        div.appendChild(table);
+        createNextPage(div,current,all,direction,state);
+    }
+
+    function createNextPage(father,current,all,direction,state){  //创建下一页标签
+    	// var direction,state;
+    	
+        if(current == 1 && current != all){
+            var nextPage = document.createElement("a");
+            nextPage.innerHTML = "下一页";
+            nextPage.href = "javascript:;";
+            nextPage.className = "nextPage";
+            father.appendChild(nextPage);
+        }
+        else if(current == all){
+        	var lastPage = document.createElement("a");
+            lastPage.innerHTML = "上一页";
+            lastPage.href = "javascript:;";
+            lastPage.className = "lastPage";
+            father.appendChild(lastPage);
+        }
+        else{
+            var nextPage = document.createElement("a");
+            var lastPage = document.createElement("a");
+            lastPage.innerHTML = "上一页";
+            lastPage.href = "javascript:;";
+            lastPage.className = "lastPage";
+            father.appendChild(lastPage);
+
+
+            nextPage.innerHTML = "下一页";
+            nextPage.href = "javascript:;";
+            nextPage.className = "nextPage";
+            father.appendChild(nextPage);
+            
+        }
+        $("a.nextPage").on('click',function(){
+        	var infor = "oper=showAll&"
+        	+ "&page=" + (current + 1)
+            + "&direction=" + direction
+            + "&state=" + state;
+            var xhr = GetXmlHttpObject();
+    	    xhr.onreadystatechange = function(){
+    		    if(xhr.readyState == 4){
+    			    if((xhr.status >= 200 && xhr.status < 300)||(xhr.status ==304)){
+                        var strJson = xhr.responseText;
+                        var informa = eval("("+strJson+")");
+                        showInfor(informa,direction,state);
+               
+    			    }
+    			    else{
+
+    				
+    		        }
+    	        }
+    	    }
+    	    xhr.open("POST","/NewMembers/NmServlet");
+            xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+    	    xhr.send(infor);
+        });
+
+
+        $("a.lastPage").on('click',function(){
+        	var infor = "showAll&"
+        	+ "&page=" + (current - 1)
+            + "&direction=" + direction
+            + "&state=" + state;
+            var xhr = GetXmlHttpObject();
+    	    xhr.onreadystatechange = function(){
+    		    if(xhr.readyState == 4){
+    			    if((xhr.status >= 200 && xhr.status < 300)||(xhr.status ==304)){
+                        var strJson = xhr.responseText;
+                        var informa = eval("("+strJson+")");
+                        showInfor(informa,direction,state);
+               
+    			    }
+    			    else{
+
+    				
+    		        }
+    	        }
+    	    }
+    	    xhr.open("POST","/NewMembers/NmServlet");
+            xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+    	    xhr.send(infor);
+        });
+        
+    }
+    // function nextPageSend(page,direction,state){}
+    function createTableHead(table){  //创建头部固定行
+        var tr = document.createElement("tr");
+        table.appendChild(tr);
+        var td = document.createElement("td");
+        td.style.background = "#1E90FF";
+        td.innerHTML = "ID";
+        tr.appendChild(td);
+        var td = document.createElement("td");
+        td.style.background = "#1E90FF";
+        td.innerHTML = "学号";
+        tr.appendChild(td);
+        var td = document.createElement("td");
+        td.style.background = "#1E90FF";
+        td.innerHTML = "姓名";
+        tr.appendChild(td);
+        var td = document.createElement("td");
+        td.style.background = "#1E90FF";
+        td.innerHTML = "专业";
+        tr.appendChild(td);
+        var td = document.createElement("td");
+        td.style.background = "#1E90FF";
+        td.innerHTML = "方向";
+        tr.appendChild(td);
+        var td = document.createElement("td");
+        td.style.background = "#1E90FF";
+        td.innerHTML = "得分";
+        tr.appendChild(td);
+        var td = document.createElement("td");
+        td.style.background = "#1E90FF";
+        td.innerHTML = "状态";
+        tr.appendChild(td);
+        var td = document.createElement("td");
+        td.style.background = "#1E90FF";
+        td.innerHTML = "备注";
+        tr.appendChild(td);
+        var td = document.createElement("td");
+        td.style.background = "#1E90FF";
+        td.innerHTML = "电话";
+        tr.appendChild(td);
+
+    }
+
+    function updata(){  //点击某个修改标签时，请求数据
+  
+
+
+        $("a.modify").live('click',function(){
+        	var ID,score,state,remark;
+        	ID = this.parentNode.childNodes[0].innerHTML;
+        	score = this.parentNode.childNodes[5].childNodes[0].value;
+            state = this.parentNode.childNodes[6].childNodes[0].value;
+            remark = this.parentNode.childNodes[7].childNodes[0].value;
+            sendQuest(ID,score,state,remark);
+      
+
+    	})
+    }
+    updata();
+
+    function sendQuest(ID,score,state,remark){  //发送请求
+        var infor = "oper=updata&" +"&id=" 
+        + ID
+        + "&score=" + score
+        + "&state=" + state
+        + "&remark=" + remark;
+    	
+       
+    	var xhr = GetXmlHttpObject();
+    	xhr.onreadystatechange = function(){
+    		if(xhr.readyState == 4){
+    			if((xhr.status >= 200 && xhr.status < 300)||(xhr.status ==304)){
+                    var strJson = xhr.responseText;
+                    var state = eval("("+strJson+")");
+               
+    			}
+    			else{
+
+    				
+    		    }
+    	    }
+    	}
+    	xhr.open("POST","/NewMembers/NmServlet");
+        xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+    	xhr.send(infor);
+    }
+
+
+    function GetXmlHttpObject()//获取xmlhttp对象
+    {
+        var xmlHttp=null;  
+        try
+        {
+            // Firefox, Opera 8.0+, Safari
+            xmlHttp=new XMLHttpRequest();
+        }
+        catch (e)
+        {
+            // Internet Explorer
+            try
+            {
+                xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+            }
+            catch (e)
+            {
+            xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+            }
+        }
+        return xmlHttp;
+    }
+</script>
+</html>

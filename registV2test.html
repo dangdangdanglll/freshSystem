@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>regist</title>
+	<style type="text/css">
+        body{
+        	position: relative;
+        	background-image: url(backg3.jpg);
+            background-size: 100%;
+        }
+        #head{
+        	text-align: center;
+        }
+        #headd{
+        	font-size: 3em;
+        	font-family:SimSun;
+        	color:#87CEFA;
+        }
+		#container{
+			height: 40em;
+			width:23em;
+			border: 0px solid black;
+			position: absolute;  
+			left: 0;
+			right: 0;
+			top:5em;
+			margin:auto auto; 
+			/*text-align: center;*/
+			box-shadow:0 0 10px #000 ;
+			border-radius: 7px; 
+			background: linear-gradient(120deg,#00fcff,#0049ac);
+		}
+
+
+
+
+
+
+         #phonelabel{
+			height: 50px;
+			width: 300px;
+			border: 1px solid;
+            position: absolute;
+            left: 0;
+            right:0;
+            margin: 0 auto;
+            border-radius: 5px;
+            background: #002686;
+		}
+        #validatelabel{
+			height: 50px;
+			width: 300px;
+			border: 1px solid;
+            position: absolute;
+            /*left: 0;
+            right:0;
+            margin: 0 auto;*/
+            border-radius: 5px;
+            background: #002686;
+		}
+        .box input{
+        	position: absolute;
+        	height: 26px;
+        	bottom: 0;
+            border:none;
+            background-color: #002686;
+            color: white;
+            outline: none;
+        }
+        .box span{
+        	width: 200px;
+        	height:100%;
+        	position: absolute;
+        	line-height: 50px;
+            top:0;	
+            transition: 0.5s;
+            transform-origin: left top;
+            color: #fff;
+        }
+        .box input:focus+span{
+        	transform: scale(0.6);
+        	opacity:0.6;
+
+        }
+
+        #boxdiv{
+        	height: 350px;
+        	width: 300px;
+        	/*border:1px solid red;*/
+        	position: absolute;
+        	left: 0;
+        	right:0;
+        	margin:0 auto;
+        	/*background: linear-gradient(120deg,#00fcff,#0049ac);*/
+        }
+
+
+        #validatelabel{
+        	width: 200px;
+            position: absolute;
+            left: :0px;
+            /*top:0;*/
+            /*background-color: red;*/
+        }
+        #btncode{
+        	width: 80px;
+        	height:50px;
+        	position: absolute;
+        	right:0;
+        	/*border: 1px solid red;*/
+        	line-height: 50px;
+        	border-radius: 5px;
+        	background-color: #87CEFA;
+        	text-align: center;
+        }
+        #btncode:hover{
+            background-color: #3A5FCD;
+	    	cursor:pointer;
+        }
+
+        #direction{
+        	width: 100px;
+        	height:35px;
+        	border-color: white;
+        	color: white;
+        	background-color: #002686;
+        	border-radius: 5px;
+        }
+        #selectdiv{
+        	width: 300px;
+        	height: 50px;
+        	border-radius: 7px;
+        	position: absolute;
+        	background-color: #002686;
+        }
+        #registdiv{
+        	height: 70px;
+        	width: 100%;
+        	/*border:1px solid red;*/
+        	text-align: center;
+        }
+		#registfont{
+            font-size: 3em;
+            font-weight: bold;
+		}
+		#land{
+            background-color:#87CEFA;
+            width: 300px;
+            height: 50px;
+            border: 0px;
+            border-radius: 10px;
+	    }
+	    #land:hover{
+	    	background-color: #3A5FCD;
+	    	cursor:pointer;
+	    }
+	    button{
+	    	height:3em;
+	    	width: 17em;
+	    }
+        .font1{
+            position: absolute;
+            height: 30px;
+            width:200px;
+            /*border: 1px solid green;*/
+            left: 0;
+            right:0;
+            margin:0 auto;
+        }
+        #write{
+            top:430px;
+        }
+        #write2{
+            top: 450px;
+        }
+        @media screen and (max-width: 500px){
+            body{
+                background-image:none;
+            }
+        }
+	</style>
+</head>
+<body>
+	<div id="head">
+		<font id="headd">
+			TC科技小组
+		</font>
+	</div>
+	<div id="container">
+		    <br>
+		    <div id="registdiv">
+		    	<font id="registfont">注册</font>
+		    </div>
+		    <br>
+
+            <div id="boxdiv">
+            	<label class="box" id="phonelabel">
+			        <input type="text" name="" id="phone">
+			        <span id="test1">联系电话:</span>
+		        </label>
+
+                <br><br><br><br>
+		        <label class="box" id="validatelabel">
+			        <input type="text" name="" id="validate">
+			        <span id="test2">验证码:</span>
+		        </label>
+		        <div id="btncode">获取验证码</div>
+		        <br><br><br><br>
+
+                <div id="selectdiv">
+                	<label style="line-height: 50px;color: white">选择方向：</label>
+                	&#12288;&#12288;
+                	<select id="direction">
+                        <option>前端</option>
+                        <option>后台</option>
+                        <option>安卓</option>
+                        <option>嵌入式</option>
+                        <option>产品</option>
+                    </select>
+                </div>
+                <br><br><br><br>
+                <button id="land">注册</button>
+            </div>
+
+            
+		    
+
+
+
+
+
+			<!-- <label>姓名：</label>
+	        <input type="text" name="" id="namee"><br>
+            <br>
+	        <label>专业班级：</label>
+	        <input type="text" name="" id="classes"><br>
+            <br>
+	        <label>联系电话：</label>
+	        <input type="text" name="" id="phone"><br>
+            <br>
+
+            <label>验证码：</label>
+            <input type="text" id="validate"><br>
+            <a href="javascript:;" id="validatebtn">获取验证码</a> -->
+            
+            
+            <br><br><br><br>
+	        <font id="write" class="font1"></font>
+            <font id="write2" color="red" class="font1"></font>
+	        <!-- <img src="dongtaitu.jpg "> -->    
+	</div>
+   
+</body>
+<script type="text/javascript">
+	// var namee = document.getElementById("namee");
+	// var classes = document.getElementById("classes");
+	// var direction = document.getElementById("direction");
+	var phone = document.getElementById("phone");
+    var land = document.getElementById("land");
+    var write = document.getElementById("write");
+    var validate = document.getElementById("validate");
+    var validatebtn = document.getElementById("btncode");
+    var write2 = document.getElementById("write2");
+    var validatevalue;
+
+
+    var label1 = document.getElementById("phonelabel");
+    var label2 = document.getElementById("validatelabel");
+    var test1 = document.getElementById("test1");
+    var test2 = document.getElementById("test2");
+    // label1.onclick = toscale(test1);
+    // label2.onclick = toscale(test2);
+
+    // function toscale(arg){
+    //     arg.style.transform = "scale(0.6)";
+    // }
+    label1.onclick = function(){
+        test1.style.transform = "scale(0.6)";
+    }
+    label2.onclick = function(){
+        test2.style.transform = "scale(0.6)";
+    }
+
+    land.onclick = function(){
+        var ttt = validatetest();
+        if(ttt == 0)
+            write2.innerHTML = "验证码错误！！！重新获取";
+        else if(ttt == 1){
+            // var value1 = namee.value;
+            // var value2 = classes.value;
+            var value3 = direction.value;
+            var value4 = phone.value;
+
+            // value1 = value1.split("");
+            // for(var i = 0;i < value1.length;i++){
+            //     if(value1[i] == "<" || value1[i] == ">"){
+            //          value1.splice(i,1);
+            //     }
+            // }
+            // value1 = value1.join("");
+            
+            // value2 = value2.split("");
+            // for(var i = 0;i < value2.length;i++){
+            //     if(value2[i] == "<" || value2[i] == ">"){
+            //          value2.splice(i,1);
+            //     }
+            // }
+            // value2 = value2.join("");
+
+            value3 = value3.split("");
+            for(var i = 0;i < value3.length;i++){
+                if(value3[i] == "<" || value3[i] == ">"){
+                     value3.splice(i,1);
+                }
+            }
+            value3 = value3.join("");
+
+            value4 = value4.split("");
+            for(var i = 0;i < value4.length;i++){
+                if(value4[i] == "<" || value4[i] == ">"){
+                     value4.splice(i,1);
+                }
+            }
+            value4 = value4.join("");
+            
+
+
+
+            var infor = "oper=reg&"+
+             // "&stuName=" + value1
+            // + "&major=" + value2
+              "&direction=" + value3
+            + "&tel=" + value4;
+           
+            var xhr = GetXmlHttpObject();
+            xhr.onreadystatechange = function(){
+            if(xhr.readyState == 4){
+                if((xhr.status >= 200 && xhr.status < 300)||(xhr.status ==304)){
+                   
+                    var strJson = xhr.responseText;
+                    var state = eval("("+strJson+")");
+                    if(state.flag == 3){
+                        write.innerHTML = "注册成功,请开始登陆，正在跳转...";
+                        setTimeout(funtest,2000);
+                        function funtest(){
+                            window.location.href = "landV2.html";
+                        }
+                        
+                    }
+                    if(state.flag == 2)
+                        write.innerHTML = "未注册";
+                    if(state.flag == 0)
+                        write2.innerHTML = "请打开cooki";
+                }
+                else
+                    write.innerHTML = "注册失败";
+            }
+        }
+        xhr.open("POST","/NewMembers/NmServlet");
+        xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+        xhr.send(infor);
+        }
+
+
+
+    	
+
+    }
+    
+    function validatetest(){
+        if(validate.value == validatevalue)
+            return 1;
+        else
+            return 0;
+    }
+    // function btnchange(btn){
+    //     tbn.innerHTML = "60s";
+
+    // }
+    var flag=0;
+    validatebtn.onclick = function(){
+        
+        
+        if(flag == 0){
+            // console.log("send");
+            var infor = "oper=sendCode&" + 
+            "&tel" + phone.value;
+            // alert(phone.value);
+            
+            var xhr = GetXmlHttpObject();
+            xhr.onreadystatechange = function(){
+                if(xhr.readyState == 4){
+                    if((xhr.status >= 200 && xhr.status < 300)||(xhr.    status ==304)){
+                        var strJson = xhr.responseText;
+                        var state = eval("("+strJson+")");
+                        validatevalue = state.codee;     //    code为关键字？？？
+                       
+                    }
+                    else{
+                        
+                    }
+                }
+            }
+            xhr.open("POST","/NewMembers/NmServlet");
+            xhr.setRequestHeader("Content-Type","application/    x-www-form-urlencoded");
+            xhr.send(infor);
+        }
+
+        
+
+        if(flag == 0){
+            flag = 1;
+            var tttt;
+            validatebtn.innerHTML = "60s后重发";
+            var testt = parseInt(validatebtn.innerHTML);
+            tttt = setInterval(function(){
+                testt--;
+                // validatebtn.disabled = true;
+                validatebtn.innerHTML = testt + "s后重发";
+                if(testt == 0){                                                                             
+                    clearInterval(tttt);
+                    // validatebtn.disabled = false;
+                    
+                    validatebtn.innerTHML = "获取验证码";
+                    flag = 0;
+                }
+            },1000);
+        }
+        setTimeout(function(){
+            validatebtn.innerHTML = "获取验证码";
+        },61000)
+        
+    }
+    
+
+    function GetXmlHttpObject()//获取xmlhttp对象
+    {
+        var xmlHttp=null;
+        try
+        {
+            // Firefox, Opera 8.0+, Safari
+            xmlHttp=new XMLHttpRequest();
+        }
+        catch (e)
+        {
+            // Internet Explorer
+            try
+            {
+                xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+            }
+            catch (e)
+            {
+            xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+            }
+        }
+        return xmlHttp;
+    }
+    function fullScreen(){
+    	var width = document.body.clientWidth;
+    	var height = document.body.clientHeight;
+    	var target = document.getElementById("container");
+    	var body = document.getElementsByName("body")[0];
+    	var num = window.screen.width;
+    	if(width < 1200){
+    		var body = document.getElementsByTagName("html")[0];
+	        body.style.width = window.screen.width + "px";
+	        body.style.height = window.screen.height + "px";
+    	}
+    }
+    fullScreen();
+
+</script>
+</html>
